@@ -1,6 +1,7 @@
+import { Component, OnInit } from '@angular/core';
 import { Med } from './../med/med';
-import { Component } from '@angular/core';
-import { MEDS } from './../mock-meds/mock-meds';
+import { MedService } from './../med.service';
+import { MessageService } from '../message.service';
 
 
 @Component({
@@ -11,20 +12,29 @@ import { MEDS } from './../mock-meds/mock-meds';
 })
 
 
-export class MedicationComponent {
 
-  medication: Med = {
-    id: 1,
-    name: 'Galliprant'
-  };
+export class MedicationComponent implements OnInit {
 
-  meds = MEDS;
   selectedMed?: Med;
 
-  onSelect(meds: Med): void {
-    this.selectedMed = meds;
+  medication: Med [] = [];
+
+
+  constructor(private medService: MedService, private messageService: MessageService){}
+
+  ngOnInit(): void {
+    this.getMeds();
+  }
+
+  onSelect(med: Med): void {
+    this.selectedMed = med;
+    this.messageService.add('MedicationComponent: Selected med id=${med.id}');
   }
 
 
+getMeds(): void {
+  this.medService.getMeds()
+      .subscribe(med => this.medication = med);
 }
 
+}
