@@ -15,10 +15,22 @@ export class MedService {
   constructor(private messageService: MessageService) { }
 
 
+  //MEDS is hardcoded array of Med
   getMeds(): Observable<Med[]> {
+    this.getTime();
     const med = of(MEDS);
-    this.messageService.add('MedService: fetched meds');
+    this.messageService.add('Medication Selections');
     return med;
+
+
+  }
+  getTime(){
+    let currentDate = new Date();
+    let time = currentDate.getTime();
+    this.messageService.add('Date');
+    console.log(currentDate);
+
+    return currentDate;
   }
 
 }

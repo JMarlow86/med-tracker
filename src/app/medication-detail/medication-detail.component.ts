@@ -9,6 +9,7 @@ import { Med } from './../med/med';
 
 
 export class MedicationDetailComponent {
-  @Input() med?: Med;
+  @Input() med?: Med; // defines input as part of Med array
+
 
 }

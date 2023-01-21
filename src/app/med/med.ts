@@ -1,8 +1,13 @@
-import { NumberValueAccessor } from "@angular/forms";
+
+
+//DEFINES Med. SEE Mock-Meds.ts for hard coded values
 
 export interface Med {
-id: number;
+id: string;
 name: string;
+directions: any;
+mg: string;
+
 }
 
 
