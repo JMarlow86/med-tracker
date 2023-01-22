@@ -1,10 +1,9 @@
 
-
+<div class="side-bar">
 <div *ngIf="messageService.messages.length">
-
   <h2>Medication Log</h2>
   <button type="button" class="clear"
           (click)="messageService.clear()">Clear Log</button>
-  <div *ngFor='let message of messageService.messages'> {{message}} </div>
-
+  <div class="med-log" *ngFor='let message of messageService.messages'> {{message}} </div>
+</div>
 </div>

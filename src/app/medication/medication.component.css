@@ -1,28 +1,35 @@
-/* HeroesComponent's private CSS styles */
 
+body{
+  background-color: rgb(134, 177, 208);
+}
 
 .meds {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 10em;
-  /* display: inline-block;
-  justify-content: center;
-  border: 1px solid red;
-  margin: 0 0 2em 0;
-  list-style-type: none;
-  padding: 0;
-  width: 15em; */
+  /* background-color: whitesmoke; */
+  /* border: 2px solid ; */
+  padding-bottom: 20%;
+  margin-left: 40%;
+  margin-top: 20%;
+  padding-right: 3%;
+
+
+
 }
 
 .meds li {
   display: flex;
+
+
 }
 
 .meds button {
+
   flex: 1;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
   left: 0;
   background-color: rgb(236, 203, 203);
   margin: .5em;

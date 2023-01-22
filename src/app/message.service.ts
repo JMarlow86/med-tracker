@@ -1,4 +1,3 @@
-import { MessagesComponent } from './messages/messages.component';
 import { Injectable } from '@angular/core';
 
 
@@ -8,7 +7,7 @@ import { Injectable } from '@angular/core';
 })
 export class MessageService {
   messages: string[] =[];
- Date!: DateConstructor;
+  Date!: DateConstructor;
 
   add(message: string) {
     this.messages.push(message);

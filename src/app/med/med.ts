@@ -1,7 +1,7 @@
-import { timestamp } from 'rxjs';
 
 
-//DEFINES Med. SEE Mock-Meds.ts for hard coded values
+
+//DEFINES Med Array SEE Mock-Meds.ts for hard coded values
 
 export interface Med {
 id: string;

@@ -1,42 +1,39 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-</html>
+
 
 <body>
-<h2>My Medications</h2>
-
-<ul class="meds">
-  <li *ngFor="let med of medication">
-    <button [class.selected] = "med === selectedMed" type="button"
-    (click) = "onSelect(med)">
-      <span class="badge">{{med.mg}}</span>
-      <span class ="name">{{med.name}}</span>
-    </button>
-  </li>
-</ul>
-<div class="pop-up" *ngIf="med">
-  <h2>{{med.name | uppercase}} Details:</h2>
-<div class="deets">
-  <div>Id: {{med.id}}</div>
-  <div>Directions: {{med.directions}}</div>
-</div>
-
-
-
+  <div class="pop-up" *ngIf="med">
+    <h2>{{med.name | uppercase}} Details:</h2>
+    <div class="deets">
+      <div>Id: {{med.id}}</div>
+      <div>Directions: {{med.directions}}</div>
+    </div>
+  </div>
+<div class="row">
+  <ul class="meds">
+    <h2>My Medications</h2>
+    <li *ngFor="let med of medication">
+      <button [class.selected] = "med === selectedMed" type="button"
+      (click) = "onSelect(med)">
+        <span class="badge">{{med.mg}}</span>
+        <span class ="name">{{med.name}}</span>
+      </button>
+    </li>
+  </ul>
+  <!-- <div class="pop-up" *ngIf="med">
+    <h2>{{med.name | uppercase}} Details:</h2>
+    <div class="deets">
+      <div>Id: {{med.id}}</div>
+      <div>Directions: {{med.directions}}</div>
+    </div>
+  </div> -->
 </div>
 
     <!-- <button type="button"
 onclick="document.getElementById('date_time_button').innerHTML = Date()">
-Click and see Date and Time.</button>
+Click and see Date and Time.</button> -->
 </body>
 
-<p id="date_time_button"></p> -->
-
-<!-- <button type="button" (click)="testFunction()"> -->
+<!-- <p id="date_time_button"></p> -->
 
 
   <app-medication-detail [med]="selectedMed"></app-medication-detail>

@@ -7,7 +7,7 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My Med Tracker';
+   title = 'My Med Tracker';
 
   constructor() {
 
