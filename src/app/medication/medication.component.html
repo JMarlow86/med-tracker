@@ -17,19 +17,27 @@
       <span class ="name">{{med.name}}</span>
     </button>
   </li>
-
 </ul>
+<div class="pop-up" *ngIf="med">
+  <h2>{{med.name | uppercase}} Details:</h2>
+<div class="deets">
+  <div>Id: {{med.id}}</div>
+  <div>Directions: {{med.directions}}</div>
+</div>
 
 
-    <button type="button"
+
+</div>
+
+    <!-- <button type="button"
 onclick="document.getElementById('date_time_button').innerHTML = Date()">
 Click and see Date and Time.</button>
 </body>
 
-<p id="date_time_button"></p>
+<p id="date_time_button"></p> -->
 
 <!-- <button type="button" (click)="testFunction()"> -->
 
 
+  <app-medication-detail [med]="selectedMed"></app-medication-detail>
 
-<app-medication-detail [med]="selectedMed"></app-medication-detail>

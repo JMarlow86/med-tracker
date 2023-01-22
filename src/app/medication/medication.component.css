@@ -1,7 +1,5 @@
 /* HeroesComponent's private CSS styles */
-body {
-  background-color: rgb(186, 186, 181);
-}
+
 
 .meds {
   display: flex;
@@ -74,6 +72,9 @@ body {
   border-radius: 10px 0 0 10px;
 
 
+}
+.badge {
+  width: 40px;
 }
 
 .meds .name {

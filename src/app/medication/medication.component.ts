@@ -41,9 +41,8 @@ export class MedicationComponent implements OnInit {
 
   onSelect(med: Med) {
     this.showTime();
-
     this.selectedMed = med;
-    this.messageService.add(`RX name: ${med.name}`);
+    this.messageService.add(`You took ${med.name} at ${med.timestamp}`);
     console.log('ONSELECT');
 
 

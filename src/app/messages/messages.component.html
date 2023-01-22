@@ -2,9 +2,9 @@
 
 <div *ngIf="messageService.messages.length">
 
-  <h2>Messages</h2>
+  <h2>Medication Log</h2>
   <button type="button" class="clear"
-          (click)="messageService.clear()">Reset Tracker</button>
+          (click)="messageService.clear()">Clear Log</button>
   <div *ngFor='let message of messageService.messages'> {{message}} </div>
 
 </div>

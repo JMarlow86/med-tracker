@@ -1,3 +1,4 @@
+import { timestamp } from 'rxjs';
 
 
 //DEFINES Med. SEE Mock-Meds.ts for hard coded values
@@ -7,6 +8,7 @@ id: string;
 name: string;
 directions: any;
 mg: string;
+timestamp: string;
 
 }
 

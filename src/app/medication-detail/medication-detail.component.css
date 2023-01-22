@@ -1,7 +1,18 @@
 h2 {
-  border: 1px solid red;
+
+
 }
 
 .deets {
-  border: 1px solid green;
+
+
 }
+.pop-up{
+  border: 2px solid grey;
+  margin: 0 20% 0 30%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  box-shadow: 5px 10px #369;;
+
+}
+
