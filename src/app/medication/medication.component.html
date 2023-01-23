@@ -10,7 +10,7 @@
   </div>
 <div class="row">
   <ul class="meds">
-    <h2>My Medications</h2>
+    <h2>Medications</h2>
     <li *ngFor="let med of medication">
       <button [class.selected] = "med === selectedMed" type="button"
       (click) = "onSelect(med)">

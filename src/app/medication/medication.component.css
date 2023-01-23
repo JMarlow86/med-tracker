@@ -8,14 +8,10 @@ body{
   flex-direction: column;
   justify-content: center;
   width: 10em;
-  /* background-color: whitesmoke; */
-  /* border: 2px solid ; */
   padding-bottom: 20%;
-  margin-left: 40%;
+  margin-left: 41%;
   margin-top: 20%;
   padding-right: 3%;
-
-
 
 }
 
@@ -26,19 +22,22 @@ body{
 }
 
 .meds button {
+  background-color: rgb(236, 203, 203);
 
   flex: 1;
   cursor: pointer;
-  /* position: relative; */
+  position: relative;
   left: 0;
-  background-color: rgb(236, 203, 203);
   margin: .5em;
   padding: 0;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   align-items: stretch;
-  height: 1.8em;
+  height: 2.2em;
   border: none;
+  font-size: medium;
+
+
 }
 
 .meds button:hover {
@@ -69,19 +68,20 @@ body{
 
 .meds .badge {
   display: inline-block;
-  font-size: small;
+  font-size: medium;
   color: white;
   padding: 4px;
   /* padding: 0.8em 0.7em 0 0.7em; */
   background-color: #9bbde1;
   /* line-height: 1em; */
   margin-right: .8em;
-  border-radius: 10px 0 0 10px;
+  border-radius: 20px 0 0 20px;
 
 
 }
 .badge {
-  width: 40px;
+
+  width: 50px;
 }
 
 .meds .name {
@@ -90,5 +90,10 @@ body{
 }
 
 h2 {
+  display: inline;
+  margin-left: 9%;
+  padding-left: 8px;
+
   color: #505050;
+
 }
