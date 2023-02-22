@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-click-time',
   templateUrl: './click-time.component.html',
-  styleUrls: ['./click-time.component.css']
+
 })
 export class ClickTimeComponent {
   clickTime = '';

@@ -8,6 +8,7 @@ import { MessagesComponent } from './messages/messages.component';
 // import { AppRoutingModule } from './app-routing.module';
 import { DatePipe } from '@angular/common';
 import { ClickTimeComponent } from './click-time/click-time.component';
+import { NavHeaderComponent } from './nav-header/nav-header.component';
 
 
 
@@ -17,7 +18,8 @@ import { ClickTimeComponent } from './click-time/click-time.component';
     MedicationComponent,
     MedicationDetailComponent,
     MessagesComponent,
-    ClickTimeComponent
+    ClickTimeComponent,
+    NavHeaderComponent
   ],
   imports: [
     BrowserModule,

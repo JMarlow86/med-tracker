@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Med } from './../med/med';
 import { MedService } from './../med.service';
 import { MessageService } from '../message.service';
+import { NavHeaderComponent } from '../nav-header/nav-header.component';
 // import { ClickTimeComponent } from '../click-time/click-time.component';
 
 
@@ -27,33 +28,19 @@ export class MedicationComponent implements OnInit {
     this.getMeds();
   }
 
-
-  //logs time that medication is selected in console
-  showTime() {
-    let currentDate = new Date();
-    this.clickTime = currentDate.toLocaleString();
-    let timeStamp = currentDate.getTime();
-    this.showTime.toString();
-    console.log('SHOW TIME CALLED' + ' ' + currentDate);
-
-
-  }
  //function called when pill button selected
   onSelect(med: Med) {
-    this.showTime();
     this.selectedMed = med;
-    this.messageService.add(`You took ${med.name} at ${med.timestamp}`);
+    this.messageService.add(`You took ${med.name} at` );
     this.messageService.date('');
-    if(med.name === 'Prednisone') {
-      this.messageService.add('Prednisone should be taken with food');
+    if(med.name === 'Prednisone' || med.name === 'Tylenol') {
+      this.messageService.add(`Reminder! ${med.name} should be taken with food`);
+      this.messageService.add('');
     } else {
-      this.messageService.add('No additional instructions necessary')
+      this.messageService.add('')
     }
     console.log('ONSELECT FUNCTION CALLED');
   }
-
-
-
 
   //this function is called when page loads and gets hard coded med values
 getMeds(): void {
@@ -64,10 +51,7 @@ getMeds(): void {
 
 }
 
-logTime() {
-  const timeClicked = new Date().toLocaleString();
-  console.log(`Button clicked at ${timeClicked}`);
-}
+
 
 
 
