@@ -18,7 +18,7 @@ export class MedService {
   //MEDS is hardcoded array of Med returns all meds
   getMeds(): Observable<Med[]> {
     const med = of(MEDS);
-    console.log('returns selected me');
+    console.log('returns selected med');
     return med;
   }
 

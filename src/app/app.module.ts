@@ -7,6 +7,7 @@ import { MedicationDetailComponent } from './medication-detail/medication-detail
 import { MessagesComponent } from './messages/messages.component';
 // import { AppRoutingModule } from './app-routing.module';
 import { DatePipe } from '@angular/common';
+import { ClickTimeComponent } from './click-time/click-time.component';
 
 
 
@@ -15,7 +16,8 @@ import { DatePipe } from '@angular/common';
     AppComponent,
     MedicationComponent,
     MedicationDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    ClickTimeComponent
   ],
   imports: [
     BrowserModule,
